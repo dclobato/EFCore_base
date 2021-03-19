@@ -21,6 +21,7 @@ namespace EFCore_Linq1
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
+      ModelBuilderExtensions.SeedDatabase(modelBuilder);
     }
   }
 }
